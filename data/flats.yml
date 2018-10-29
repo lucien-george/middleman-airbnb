@@ -30,3 +30,11 @@ lucien-george:
   city_slug: "london"
   wifi: true
   rating: 5
+gmartinezcampos:
+  name: "Gabriella's home"
+  username: "gmartinezcampos"
+  description: "Nice flat in rio"
+  city_name: "Rio, Brazil"
+  city_slug: "rio"
+  wifi: true
+  rating: 1
