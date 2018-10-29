@@ -1,0 +1,32 @@
+ssaunier:
+  name: "Sebastien's home"
+  username: "ssaunier"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: false
+  rating: 4
+papillard:
+  name: "Boris' home"
+  username: "papillard"
+  description: "Small flat in Tokyo"
+  city_name: "Tokyo, Japan"
+  city_slug: "tokyo"
+  wifi: true
+  rating: 3
+monsieurpaillard:
+  name: "Romain's home"
+  username: "monsieurpaillard"
+  description: "Nice flat in Piccadilly"
+  city_name: "London, UK"
+  city_slug: "london"
+  wifi: true
+  rating: 5
+lucien-george:
+  name: "Lucien's home"
+  username: "lucien-george"
+  description: "Nice flat in south kensington"
+  city_name: "London, UK"
+  city_slug: "london"
+  wifi: true
+  rating: 5

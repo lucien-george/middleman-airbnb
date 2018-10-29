@@ -1,0 +1,57 @@
+.banner-city {
+  color: white;
+  text-align: center;
+  height: 50vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  p {
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    margin-bottom: 30px;
+  }
+}
+
+.owner {
+  width: 400px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 100px;
+  }
+}
+
+.flat-info {
+  padding: 10px;
+  li {
+    color: #f6b53f;
+  }
+}
+
+.user-info {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}

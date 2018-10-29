@@ -1,0 +1,50 @@
+<!-- source/flats/show.html.erb -->
+
+<% flat = data.flats[owner] %>
+<!-- Access data.flats with owner's name as key -->
+<div class="banner-city" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+  <div class="banner-content">
+    <h1>Le Wagon <%= flat.city_slug.capitalize %> </h1>
+  </div>
+</div>
+
+<!-- Inject flat data in template -->
+<div class="container">
+  <div class="owner">
+    <div class="user-info">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+      <p><%= flat.name %></p>
+    </div>
+    <div class="flat-info">
+      <h4><%= flat.description %></h4>
+      <p><%= flat.city_name %></p>
+      <ul class="list-inline">
+        <% flat.rating.times do |_rating| %>
+        <li><i class="fas fa-star"></i></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="form" style="background: rgba(0, 0, 0, 0.01);">
+    <h3>Book this flat</h3>
+    <form action="#">
+      <div class="form-group">
+        <input type="text" placeholder="Check-in" id="check-in" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Check-out" id="check-out" class="form-control">
+      </div>
+      <div class="form-group">
+        <select name="guests" id="guests" class="form-control">
+          <option value="one">1 person</option>
+          <option value="two">2 persons</option>
+          <option value="three">3 persons</option>
+          <option value="four">4 persons</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </div>
+    </form>
+  </div>
+</div>

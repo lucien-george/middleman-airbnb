@@ -11,15 +11,15 @@ title: Le Wagon - Middleman
 
 <div class="container">
   <div class="row">
-    <% data.cities.each do |city, city_info| %>
+    <% data.flats.each do |owner, flat| %>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= city %>');">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
           <div class="card-description">
-            <h2>Le Wagon <%= city.capitalize %></h2>
-            <p><%= city_info.address %></p>
+            <h2>Le Wagon <%= flat.city_slug.capitalize %></h2>
+            <p><%= flat.city_name %></p>
           </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= city_info.owner %>">
-          <a class="card-link" href="#" ></a>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+          <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
         </div>
       </div>
     <% end %>
