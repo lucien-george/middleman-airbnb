@@ -1,4 +1,6 @@
+- name: 'Sebastien Saunier'
   github_nickname: 'ssaunier'
+  city: 'rio'
 - name: 'Boris Paillard'
   github_nickname: 'Papillard'
   city: 'paris'
