@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <% data.users.each do |user| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="user text-center">
+          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+          <% end %>
+          <h4><%= user.name %></h4>
+          <p>
+            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
+              <i class="fab fa-github"></i> <%= user.github_nickname %>
+            <% end %>
+          </p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

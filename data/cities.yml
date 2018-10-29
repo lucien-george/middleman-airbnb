@@ -1,0 +1,12 @@
+london:
+  address: "point west"
+  owner: "lucien-george"
+paris:
+  address: "place des etats unis"
+  owner: "gmartinezcampos"
+rio:
+  address: "rio address"
+  owner: "papillard"
+berlin:
+  address: "berlin street"
+  owner: "ssaunier"
